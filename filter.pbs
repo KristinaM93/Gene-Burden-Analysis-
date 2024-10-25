@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -P UNITI
+#PBS -N FILTER
+#PBS -l select=1:ncpus=4:mem=600GB 
+#PBS -l walltime=24:00:00
+#PBS -q defaultQ
+
+#Go to directory
+cd /scratch/RDS-FMH-UNITI-RW/Q1/
+
+#Load Anaconda so that Python can be loaded
+module load python/3.9.15
+
+#Run the python script
+python filter_genes_samples_vcfMerge.py
+#conda deactivate

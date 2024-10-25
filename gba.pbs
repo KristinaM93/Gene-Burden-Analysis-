@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -P UNITI
+#PBS -N GBA
+#PBS -l select=1:ncpus=8:mem=100GB 
+#PBS -l walltime=48:00:00
+#PBS -q defaultQ
+
+#Go to directory
+cd /scratch/RDS-FMH-UNITI-RW/Q1/
+
+#Load Anaconda so that Python can be loaded
+module load python/3.9.15
+
+#Run the python script
+python GBA.AB_GQ_DP.filterCSVS.py
+#conda deactivate
