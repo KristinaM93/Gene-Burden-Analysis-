@@ -1,0 +1,8 @@
+snp_indel	consequence	impact	LOFTEE	CADD	AF_nfe	AF_global	AF_CSVS
+snp|indel	all	HIGH			0.05	0.05	1
+snp|indel	all	HIGH	HC		0.05	0.05	1
+snp|indel	all	HIGH	LC		0.05	0.05	1
+snp|indel	all	HIGH|MODERATE	LC	20	0.05	0.05	1
+snp|indel	all	MODERATE			0.05	0.05	1
+snp|indel	all	MODERATE		20	0.05	0.05	1
+snp|indel	all	LOW			0.05	0.05	1
